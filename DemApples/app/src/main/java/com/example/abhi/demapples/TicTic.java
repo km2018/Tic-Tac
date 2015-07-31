@@ -8,13 +8,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+//Test Comment
 public class TicTic extends AppCompatActivity implements View.OnClickListener {
 
     private int i;
     ImageButton b1, b2, b3, b4, b5, b6, b7, b8, b9;
     Button b10;
     boolean n1, n2, n3, n4, n5, n6, n7, n8, n9;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         n1 = true;
@@ -195,6 +195,7 @@ public class TicTic extends AppCompatActivity implements View.OnClickListener {
                     i = 0;
                     finish();
                     startActivity(getIntent());
+
 
                     break;
 
