@@ -15,6 +15,7 @@ public class TicTic extends AppCompatActivity implements View.OnClickListener {
     ImageButton b1, b2, b3, b4, b5, b6, b7, b8, b9;
     Button b10;
     boolean n1, n2, n3, n4, n5, n6, n7, n8, n9;
+    boolean a1,a2,a3,a4,a5,a6,a7,a8,a9;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         n1 = true;
@@ -26,6 +27,15 @@ public class TicTic extends AppCompatActivity implements View.OnClickListener {
         n7 = true;
         n8 = true;
         n9 = true;
+        a1= false;
+        a2= false;
+        a3= false;
+        a4= false;
+        a5= false;
+        a6= false;
+        a7= false;
+        a8= false;
+        a9= false;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tic_tic);
         b1 = (ImageButton) this.findViewById(R.id.button_1);
@@ -77,6 +87,9 @@ public class TicTic extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.button_1:
+                    if ( i == 0 || i ==2 || i == 4 || i ==6 || i == 8 ){
+                        a1 = true;
+                    }
                     if (n1 == true) {
                         if (i % 2 == 0) {
                             b1.setImageResource(R.drawable.red);
@@ -89,6 +102,9 @@ public class TicTic extends AppCompatActivity implements View.OnClickListener {
                     }
                     break;
                 case R.id.button_2:
+                    if ( i == 0 || i ==2 || i == 4 || i ==6 || i == 8 ){
+                        a2 = true;
+                    }
 
                     if (n2 == true) {
                         if (i % 2 == 0) {
@@ -104,6 +120,9 @@ public class TicTic extends AppCompatActivity implements View.OnClickListener {
 
                     break;
                 case R.id.button_3:
+                    if ( i == 0 || i ==2 || i == 4 || i ==6 || i == 8 ){
+                        a3 = true;
+                    }
                     if (n3 == true) {
                         if (i % 2 == 0) {
                             b3.setImageResource(R.drawable.red);
@@ -118,6 +137,9 @@ public class TicTic extends AppCompatActivity implements View.OnClickListener {
 
                     break;
                 case R.id.button_4:
+                    if ( i == 0 || i ==2 || i == 4 || i ==6 || i == 8 ){
+                        a4 = true;
+                    }
                     if (n4 == true) {
                         if (i % 2 == 0) {
                             b4.setImageResource(R.drawable.red);
@@ -132,6 +154,9 @@ public class TicTic extends AppCompatActivity implements View.OnClickListener {
 
                     break;
                 case R.id.button_5:
+                    if ( i == 0 || i ==2 || i == 4 || i ==6 || i == 8 ){
+                        a5 = true;
+                    }
                     if (n5 == true) {
                         if (i % 2 == 0) {
                             b5.setImageResource(R.drawable.red);
@@ -144,6 +169,9 @@ public class TicTic extends AppCompatActivity implements View.OnClickListener {
                     }
                     break;
                 case R.id.button_6:
+                    if ( i == 0 || i ==2 || i == 4 || i ==6 || i == 8 ){
+                        a6 = true;
+                    }
                     if (n6 == true) {
                         if (i % 2 == 0) {
                             b6.setImageResource(R.drawable.red);
@@ -156,6 +184,9 @@ public class TicTic extends AppCompatActivity implements View.OnClickListener {
                     }
                     break;
                 case R.id.button_7:
+                    if ( i == 0 || i ==2 || i == 4 || i ==6 || i == 8 ){
+                        a7 = true;
+                    }
                     if (n7 == true) {
                         if (i % 2 == 0) {
                             b7.setImageResource(R.drawable.red);
@@ -168,6 +199,9 @@ public class TicTic extends AppCompatActivity implements View.OnClickListener {
                     }
                     break;
                 case R.id.button_8:
+                    if ( i == 0 || i ==2 || i == 4 || i ==6 || i == 8 ){
+                        a8 = true;
+                    }
                     if (n8 == true) {
                         if (i % 2 == 0) {
                             b8.setImageResource(R.drawable.red);
@@ -180,6 +214,9 @@ public class TicTic extends AppCompatActivity implements View.OnClickListener {
                     }
                     break;
                 case R.id.button_9:
+                    if ( i == 0 || i ==2 || i == 4 || i ==6 || i == 8 ){
+                        a9 = true;
+                    }
                     if (n9 == true) {
                         if (i % 2 == 0) {
                             b9.setImageResource(R.drawable.red);
@@ -201,6 +238,91 @@ public class TicTic extends AppCompatActivity implements View.OnClickListener {
 
 
             }
+
+winGame();
+
+    }
+    public void winGame() {
+        if(n1 == false && n2 == false && n3 == false && a1== true && a2 == true && a3 == true) {
+            finish();
+            startActivity(getIntent());
+
+        }
+        if(n1 == false && n2 == false && n3 == false && a1== false && a2 == false && a3 == false) {
+            finish();
+            startActivity(getIntent());
+
+        }
+        if(n1 == false && n5 == false && n9 == false && a1== true && a5 == true && a9 == true) {
+            finish();
+            startActivity(getIntent());
+
+        }
+        if(n1 == false && n5 == false && n9 == false && a1== false && a5 == false && a9 == false) {
+            finish();
+            startActivity(getIntent());
+
+        }
+        if(n3 == false && n5 == false && n7 == false && a3== true && a5 == true && a7 == true) {
+            finish();
+            startActivity(getIntent());
+
+        }
+        if(n3 == false && n5 == false && n7 == false && a3== false && a5 == false && a7 == false) {
+            finish();
+            startActivity(getIntent());
+
+        }
+        if(n4 == false && n5 == false && n6 == false && a4== true && a5 == true && a6 == true) {
+            finish();
+            startActivity(getIntent());
+
+        }
+        if(n4 == false && n5 == false && n6 == false && a4== false && a5 == false && a6 == false) {
+            finish();
+            startActivity(getIntent());
+
+        }
+        if(n7 == false && n8 == false && n9 == false && a7== true && a8 == true && a9 == true) {
+            finish();
+            startActivity(getIntent());
+
+        }
+        if(n7 == false && n8 == false && n9 == false && a7== false && a8 == false && a9 == false) {
+            finish();
+            startActivity(getIntent());
+
+        }
+        if(n1 == false && n4 == false && n7 == false && a1== true && a4 == true && a7 == true) {
+            finish();
+            startActivity(getIntent());
+
+        }
+        if(n1 == false && n4 == false && n7 == false && a1== false && a4 == false && a7 == false) {
+            finish();
+            startActivity(getIntent());
+
+        }
+        if(n3 == false && n6 == false && n9 == false && a3== true && a6 == true && a9 == true) {
+            finish();
+            startActivity(getIntent());
+
+        }
+        if(n3 == false && n6 == false && n9 == false && a3== false && a6 == false && a9 ==false) {
+            finish();
+            startActivity(getIntent());
+
+        }
+        if(n2 == false && n5 == false && n8 == false && a2== true && a5 == true && a8 == true) {
+            finish();
+            startActivity(getIntent());
+
+        }
+        if(n2 == false && n5 == false && n8 == false && a2== false&& a5 == false && a8 == false) {
+            finish();
+            startActivity(getIntent());
+
+        }
 
 
 
