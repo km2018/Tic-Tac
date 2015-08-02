@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 //Test Comment
 public class TicTic extends AppCompatActivity implements View.OnClickListener {
@@ -244,83 +245,211 @@ winGame();
     }
     public void winGame() {
         if(n1 == false && n2 == false && n3 == false && a1== true && a2 == true && a3 == true) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
         if(n1 == false && n2 == false && n3 == false && a1== false && a2 == false && a3 == false) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
         if(n1 == false && n5 == false && n9 == false && a1== true && a5 == true && a9 == true) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
         if(n1 == false && n5 == false && n9 == false && a1== false && a5 == false && a9 == false) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
         if(n3 == false && n5 == false && n7 == false && a3== true && a5 == true && a7 == true) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
         if(n3 == false && n5 == false && n7 == false && a3== false && a5 == false && a7 == false) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
         if(n4 == false && n5 == false && n6 == false && a4== true && a5 == true && a6 == true) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
         if(n4 == false && n5 == false && n6 == false && a4== false && a5 == false && a6 == false) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
         if(n7 == false && n8 == false && n9 == false && a7== true && a8 == true && a9 == true) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
         if(n7 == false && n8 == false && n9 == false && a7== false && a8 == false && a9 == false) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
         if(n1 == false && n4 == false && n7 == false && a1== true && a4 == true && a7 == true) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
         if(n1 == false && n4 == false && n7 == false && a1== false && a4 == false && a7 == false) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
         if(n3 == false && n6 == false && n9 == false && a3== true && a6 == true && a9 == true) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
         if(n3 == false && n6 == false && n9 == false && a3== false && a6 == false && a9 ==false) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
         if(n2 == false && n5 == false && n8 == false && a2== true && a5 == true && a8 == true) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
         if(n2 == false && n5 == false && n8 == false && a2== false&& a5 == false && a8 == false) {
-            finish();
-            startActivity(getIntent());
+            Toast.makeText(TicTic.this, "You Won! Press the Restart button!", Toast.LENGTH_SHORT).show();
+            n1 = false;
+            n2 = false;
+            n3 = false;
+            n4 = false;
+            n5 = false;
+            n6 = false;
+            n7 = false;
+            n8 = false;
+            n9 = false;
 
         }
 
